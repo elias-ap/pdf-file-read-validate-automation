@@ -4,10 +4,16 @@ import selenium.webdriver
 import PyPDF2
 from selenium.webdriver.common.by import By
 
+download_path = os.path.abspath('downloads')
+
 # SETTING OPTIONS FOR BROWSER
 options = selenium.webdriver.ChromeOptions()
 options.add_experimental_option('prefs', {
+<<<<<<< HEAD
 "download.default_directory": "C:\\Users\\elias\\PycharmProjects\\python-pdf-file-read-validate-automation\downloads",
+=======
+"download.default_directory": download_path,
+>>>>>>> b00cf8cd92e35733a709811e972de1fdaa3987e9
 "download.prompt_for_download": False,
 "download.directory_upgrade": False,
 "plugins.always_open_pdf_externally": True
@@ -36,7 +42,6 @@ button_login = browser.find_element(By.XPATH, '/html/body/div/div/a/button')
 button_login.click()
 time.sleep(1)
 
-download_path = "C:\\Users\\elias\\PycharmProjects\\file-read-automation\downloads\\"
 download_links = browser.find_element(By.XPATH, '/html/body/div/div/ul').find_elements(By.XPATH, '/html/body/div/div/ul/a')
 
 for link in download_links:
@@ -46,7 +51,7 @@ for link in download_links:
     file_name = link.get_attribute('download')
 
     # OPEN PDF FILE AND GET TEXT IN PAGE ONE
-    pdf_file = open(f'{download_path}{file_name}', 'rb')
+    pdf_file = open(f'{download_path}\\{file_name}', 'rb')
     pdf_data = PyPDF2.PdfFileReader(pdf_file)
     pdf_page = pdf_data.getPage(0)
     text = pdf_page.extractText().replace(' ', '')
