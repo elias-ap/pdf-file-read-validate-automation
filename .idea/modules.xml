@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../pythonProject/Python Selenium TESTES/.idea/Python Selenium TESTES.iml" filepath="$PROJECT_DIR$/../pythonProject/Python Selenium TESTES/.idea/Python Selenium TESTES.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/file-read-automation.iml" filepath="$PROJECT_DIR$/.idea/file-read-automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python-automatics-data-alterations-in-xml-file/.idea/python-automatics-data-alterations-in-xml-file.iml" filepath="$PROJECT_DIR$/../python-automatics-data-alterations-in-xml-file/.idea/python-automatics-data-alterations-in-xml-file.iml" />
     </modules>
   </component>
