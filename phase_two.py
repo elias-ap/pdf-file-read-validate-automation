@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 # SETTING OPTIONS FOR BROWSER
 options = selenium.webdriver.ChromeOptions()
 options.add_experimental_option('prefs', {
-"download.default_directory": "C:\\Users\\elias\\PycharmProjects\\file-read-automation\downloads",
+"download.default_directory": "C:\\Users\\elias\\PycharmProjects\\python-pdf-file-read-validate-automation\downloads",
 "download.prompt_for_download": False,
 "download.directory_upgrade": False,
 "plugins.always_open_pdf_externally": True
@@ -56,4 +56,3 @@ for link in download_links:
         print('Certificado válido')
     elif text == 'INVALIDO':
         print('Certificado inválido')
-
