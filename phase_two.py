@@ -9,11 +9,7 @@ download_path = os.path.abspath('downloads')
 # SETTING OPTIONS FOR BROWSER
 options = selenium.webdriver.ChromeOptions()
 options.add_experimental_option('prefs', {
-<<<<<<< HEAD
-"download.default_directory": "C:\\Users\\elias\\PycharmProjects\\python-pdf-file-read-validate-automation\downloads",
-=======
 "download.default_directory": download_path,
->>>>>>> b00cf8cd92e35733a709811e972de1fdaa3987e9
 "download.prompt_for_download": False,
 "download.directory_upgrade": False,
 "plugins.always_open_pdf_externally": True
