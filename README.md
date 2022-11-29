@@ -10,9 +10,9 @@ That idea automation was born in my actual job, when I heard a functionary askin
 To do this automation need install some libraries in Python like:
 
 <ul>
-    <li><b>selenium:    </b> automate Web Navigate and Web Scraping (download files and other things)   </li>
-    <li><b>PyPDF2:      </b> treat PDF files (reading)                                                  </li>
-    <li><b>pdf2image:   </b> treat PDF files (reading)                                                  </li>
+    <li><b>selenium:    </b> automate Web Navigate and Web Scraping (download files and other things)   </li><br>
+    <li><b>PyPDF2:      </b> treat PDF files (reading)                                                  </li><br>
+    <li><b>pdf2image:   </b> treat PDF images (reading)                                                 </li><br>
     <li><b>pytesseract: </b> use OCR technology to read certificate text when that's image              </li>
 </ul>
 
@@ -26,9 +26,15 @@ I don't want to make a download tutorial, because I'm a beginner on this IDE and
 <tr><td>Tesseract</td>  <td><a>https://tesseract-ocr.github.io/tessdoc/Installation.html</a>        </td>   </tr>
 </table>
 
-### Observations:
-If you are using Windows and after installations get error like this: <br><br> ![img.png](img.png) <br><br>
-Can be because pytessaract library is not seeing tesseract.exe, so you can try change path of executable manually in used library folder, where your pytesseract is installed:<br><br>
+### Observations
+<li>For selenium I used chromedriver, I don't know its best choice but this way worked for my code and I think people majority have familiar with Chrome, so we go use it.</li><br>
+
+<li>If you are using Windows and after installations get error like this: <br><br> ![img.png](img.png)</li> <br><br>
+Can be because pytessaract library is not seeing tesseract.exe, so you can try change path of executable manually in used library folder, where your pytesseract is installed:<br>
+
+## Code explain
+
+
 
 
 
