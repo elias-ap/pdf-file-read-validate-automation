@@ -27,4 +27,6 @@ browser.maximize_window()
 
 candidate_list = browser.find_elements(By.XPATH, '/html/body/div/div/ul')
 for candidate in candidate_list:
-    print(candidate.parent)
+    certificates_list = candidate.find_elements(By.TAG_NAME, 'a')
+    for certificate in certificates_list:
+        certificate.click()
